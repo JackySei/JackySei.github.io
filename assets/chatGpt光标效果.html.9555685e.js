@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7086ce38","path":"/chatGpt%E5%85%89%E6%A0%87%E6%95%88%E6%9E%9C.html","title":"","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1691636536000,"contributors":[{"name":"shenxin","email":"shenxin@eastmoney.com","commits":1}]},"filePathRelative":"chatGpt\u5149\u6807\u6548\u679C.md"}');export{t as data};

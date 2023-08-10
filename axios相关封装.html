@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.49">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>JackyNotes</title><meta name="description" content="">
+    <link rel="modulepreload" href="/assets/app.2f80defe.js"><link rel="modulepreload" href="/assets/axios相关封装.html.bd0009c2.js"><link rel="modulepreload" href="/assets/axios相关封装.html.9a60d5d9.js"><link rel="prefetch" href="/assets/BaiduDisk.html.667ba838.js"><link rel="prefetch" href="/assets/chatGpt光标效果.html.9555685e.js"><link rel="prefetch" href="/assets/FunCurrie.html.e2e475ea.js"><link rel="prefetch" href="/assets/html2canvas将iframe页面生成图片.html.6fc7a653.js"><link rel="prefetch" href="/assets/js判断是否出现省略号.html.f9ac6476.js"><link rel="prefetch" href="/assets/index.html.ff1f10c3.js"><link rel="prefetch" href="/assets/SchoolAndroidApp.html.bc6a9453.js"><link rel="prefetch" href="/assets/TravelWebsit.html.2faa1604.js"><link rel="prefetch" href="/assets/VueNote.html.b43ab8ee.js"><link rel="prefetch" href="/assets/VueReactive.html.9b2d2785.js"><link rel="prefetch" href="/assets/VuexNote.html.cc1b0d19.js"><link rel="prefetch" href="/assets/vue动态路由.html.7854ad14.js"><link rel="prefetch" href="/assets/WeatherApp.html.9cf4cf03.js"><link rel="prefetch" href="/assets/WebpacktoVue.html.58ccd581.js"><link rel="prefetch" href="/assets/复制文本操作.html.9f613376.js"><link rel="prefetch" href="/assets/定制化tinymce部分功能.html.760d2b3e.js"><link rel="prefetch" href="/assets/实现文本环绕图片.html.c88e0f30.js"><link rel="prefetch" href="/assets/格式之间的转换.html.9bb2384b.js"><link rel="prefetch" href="/assets/滚动条定位.html.b32d5ac4.js"><link rel="prefetch" href="/assets/自动引入Vue相关API与组件.html.e6af6fb7.js"><link rel="prefetch" href="/assets/跨域携带cookie.html.ff1edc3d.js"><link rel="prefetch" href="/assets/404.html.265028f6.js"><link rel="prefetch" href="/assets/BaiduDisk.html.377bf678.js"><link rel="prefetch" href="/assets/chatGpt光标效果.html.2f906e5f.js"><link rel="prefetch" href="/assets/FunCurrie.html.aafe1a96.js"><link rel="prefetch" href="/assets/html2canvas将iframe页面生成图片.html.e1962ae2.js"><link rel="prefetch" href="/assets/js判断是否出现省略号.html.145b5970.js"><link rel="prefetch" href="/assets/index.html.078ee103.js"><link rel="prefetch" href="/assets/SchoolAndroidApp.html.83baecb1.js"><link rel="prefetch" href="/assets/TravelWebsit.html.dccada84.js"><link rel="prefetch" href="/assets/VueNote.html.7a987f9d.js"><link rel="prefetch" href="/assets/VueReactive.html.b53dbecf.js"><link rel="prefetch" href="/assets/VuexNote.html.6e18719a.js"><link rel="prefetch" href="/assets/vue动态路由.html.67a4e16e.js"><link rel="prefetch" href="/assets/WeatherApp.html.cf3f8e43.js"><link rel="prefetch" href="/assets/WebpacktoVue.html.5dece516.js"><link rel="prefetch" href="/assets/复制文本操作.html.46c20677.js"><link rel="prefetch" href="/assets/定制化tinymce部分功能.html.148d4ed8.js"><link rel="prefetch" href="/assets/实现文本环绕图片.html.d3a3338a.js"><link rel="prefetch" href="/assets/格式之间的转换.html.6d4b79c6.js"><link rel="prefetch" href="/assets/滚动条定位.html.dc648fe4.js"><link rel="prefetch" href="/assets/自动引入Vue相关API与组件.html.8439b1ff.js"><link rel="prefetch" href="/assets/跨域携带cookie.html.05b5eae0.js"><link rel="prefetch" href="/assets/404.html.1d3f59f6.js"><link rel="prefetch" href="/assets/404.f566c6de.js"><link rel="prefetch" href="/assets/Layout.5ea26204.js">
+    <link rel="stylesheet" href="/assets/style.96ee71b5.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><!----><span class="site-name">JackyNotes</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><form class="search-box" role="search"><input type="search" placeholder="输入标题" autocomplete="off" spellcheck="false" value><!----></form></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading"> <!----></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/axios%E7%9B%B8%E5%85%B3%E5%B0%81%E8%A3%85.html#拦截器-添加公共token" class="router-link-active router-link-exact-active sidebar-item" aria-label="拦截器(添加公共token)"><!--[--><!--]--> 拦截器(添加公共token) <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/axios%E7%9B%B8%E5%85%B3%E5%B0%81%E8%A3%85.html#项目全局loading" class="router-link-active router-link-exact-active sidebar-item" aria-label="项目全局loading"><!--[--><!--]--> 项目全局loading <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/axios%E7%9B%B8%E5%85%B3%E5%B0%81%E8%A3%85.html#切换页面取消未完成的请求" class="router-link-active router-link-exact-active sidebar-item" aria-label="切换页面取消未完成的请求"><!--[--><!--]--> 切换页面取消未完成的请求 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/axios%E7%9B%B8%E5%85%B3%E5%B0%81%E8%A3%85.html#完整结构含其余基本封装" class="router-link-active router-link-exact-active sidebar-item" aria-label="完整结构含其余基本封装"><!--[--><!--]--> 完整结构含其余基本封装 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><p><a name="O7ore"></a></p><h2 id="拦截器-添加公共token" tabindex="-1"><a class="header-anchor" href="#拦截器-添加公共token" aria-hidden="true">#</a> 拦截器(添加公共token)</h2><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code>service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+    <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">//发请求前做的一些处理，数据转化，配置请求头，设置token,设置loading等，根据需求去添加</span>
+        config<span class="token punctuation">.</span>data <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//数据转化,也可以使用qs转换</span>
+        config<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">&#39;Content-Type&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&#39;application/json&#39;</span><span class="token punctuation">;</span>
+        <span class="token comment">//如有需要：注意使用token的时候需要引入cookie方法或者用本地localStorage等方法，推荐js-cookie</span>
+        <span class="token keyword">const</span> token <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&#39;EOAP-LOGIN-TOKEN&#39;</span><span class="token punctuation">)</span>
+            <span class="token operator">?</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&#39;EOAP-LOGIN-TOKEN&#39;</span><span class="token punctuation">)</span>
+            <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+        <span class="token comment">// M0YxNDhEMkVCMzUxQ0EyOUYwOENGNTA2MDRERjQ5M0E1MTM3QjE1OUJDNzQzODBGNzJFQ0MxQ0M1Nzc1OEVFQw==</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            config<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">&#39;EOAP-LOGIN-TOKEN&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> token<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 3.响应拦截器</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+    <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">//接收到响应数据并成功后的一些共有的处理，关闭loading等</span>
+        <span class="token comment">// response.config.metadata.endTime = new Date();</span>
+        <span class="token comment">// response.duration =</span>
+        <span class="token comment">//   response.config.metadata.endTime - response.config.metadata.startTime;</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> <span class="token number">200</span><span class="token operator">:</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg <span class="token operator">&amp;&amp;</span> response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">400</span><span class="token operator">:</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">401</span><span class="token operator">:</span>
+                localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">redirectLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">402</span><span class="token operator">:</span>
+                <span class="token comment">// localStorage.clear();</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">404</span><span class="token operator">:</span>
+                <span class="token comment">// localStorage.clear();</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">warning</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">413</span><span class="token operator">:</span>
+                <span class="token comment">// localStorage.clear();</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">500</span><span class="token operator">:</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// if (response.data.errorNumber !== 0) {</span>
+        <span class="token comment">//   ElMessage({</span>
+        <span class="token comment">//     type: &#39;error&#39;,</span>
+        <span class="token comment">//     grouping: true,</span>
+        <span class="token comment">//     message: response.data.message,</span>
+        <span class="token comment">//   });</span>
+        <span class="token comment">//   // eslint-disable-next-line no-unused-expressions, eqeqeq</span>
+        <span class="token comment">//   response.data.errorNumber == 204 ? redirectLogin() : &#39;&#39;;</span>
+        <span class="token comment">// } else {</span>
+        <span class="token keyword">return</span> response<span class="token punctuation">;</span>
+        <span class="token comment">// }</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        reqNum<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reqNum <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&#39;changeLoadingStatus&#39;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//关闭全局弹窗</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// error.config.metadata.endTime = new Date();</span>
+        <span class="token comment">// error.duration =</span>
+        <span class="token comment">//   error.config.metadata.endTime - error.config.metadata.startTime;</span>
+        <span class="token comment">// console.log(error, 887654);</span>
+        <span class="token comment">// /***** 接收到异常响应的处理开始 *****/</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>error <span class="token operator">&amp;&amp;</span> error<span class="token punctuation">.</span>response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 1.公共错误处理</span>
+            <span class="token comment">// 2.根据响应码具体处理</span>
+            <span class="token keyword">switch</span> <span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">case</span> <span class="token number">400</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;错误请求&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">401</span><span class="token operator">:</span>
+                    localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;未授权，请重新登录&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">403</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;拒绝访问&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">404</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;请求错误,未找到该资源&#39;</span><span class="token punctuation">;</span>
+                    <span class="token comment">// window.location.href = &quot;/NotFound&quot;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">405</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;请求方法未允许&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">408</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;请求超时&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">500</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">501</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;网络未实现&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">502</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;网络错误&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">503</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;服务不可用&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">504</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;网络超时&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">505</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;http版本不支持该请求&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">default</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 超时处理</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">&#39;timeout&#39;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// Toast(&quot;服务器响应超时，请刷新当前页&quot;);</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&#39;服务器响应超时，请刷新当前页&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;连接服务器失败&#39;</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// Message(error.message);</span>
+        <span class="token comment">// eslint-disable-next-line no-unused-expressions</span>
+        <span class="token comment">// eslint-disable-next-line no-unused-expressions</span>
+        error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">401</span> <span class="token operator">?</span> <span class="token function">redirectLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+        window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token doc-comment comment">/***** 处理结束 *****/</span>
+        <span class="token comment">//如果不需要错误处理，以上的处理过程都可省略</span>
+        <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a name="hlEQN"></a></p><h2 id="项目全局loading" tabindex="-1"><a class="header-anchor" href="#项目全局loading" aria-hidden="true">#</a> 项目全局loading</h2><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> reqNum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 当前正在进行的网络请求的数量</span>
+<span class="token comment">//请求拦截器中添加</span>
+    <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        reqNum<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reqNum <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&#39;changeLoadingStatus&#39;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//打开全局弹窗</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token comment">//响应拦截器中添加</span>
+	  <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        reqNum<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reqNum <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&#39;changeLoadingStatus&#39;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//关闭全局弹窗</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        reqNum<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reqNum <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&#39;changeLoadingStatus&#39;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//关闭全局弹窗</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code>    <span class="token literal-property property">mutations</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">changeLoadingStatus</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> status</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>isLoading <span class="token operator">=</span> status<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>再在父组件上使用isLoading变量控制loading效果即可 <a name="RDhSX"></a></p><h2 id="切换页面取消未完成的请求" tabindex="-1"><a class="header-anchor" href="#切换页面取消未完成的请求" aria-hidden="true">#</a> 切换页面取消未完成的请求</h2><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> reqNum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 当前正在进行的网络请求的数量</span>
+window<span class="token punctuation">.</span>_axiosPromiseArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// axios网络请求数组</span>
+
+<span class="token comment">//请求拦截器</span>
+<span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    config<span class="token punctuation">.</span>cancelToken <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">axios<span class="token punctuation">.</span>CancelToken</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">cancel</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      window<span class="token punctuation">.</span>_axiosPromiseArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span> cancel <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code>router<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">to<span class="token punctuation">,</span> from<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  window<span class="token punctuation">.</span>_axiosPromiseArr <span class="token operator">&amp;&amp;</span>
+        window<span class="token punctuation">.</span>_axiosPromiseArr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            item<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	window<span class="token punctuation">.</span>_axiosPromiseArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a name="Uz52j"></a></p><h2 id="完整结构含其余基本封装" tabindex="-1"><a class="header-anchor" href="#完整结构含其余基本封装" aria-hidden="true">#</a> 完整结构含其余基本封装</h2><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 导入axios</span>
+<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">&#39;axios&#39;</span><span class="token punctuation">;</span>
+<span class="token comment">// 使用toast做消息提醒</span>
+<span class="token keyword">import</span> Router <span class="token keyword">from</span> <span class="token string">&#39;@/route/index.js&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> env <span class="token keyword">from</span> <span class="token string">&#39;./env&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">&#39;../../store/index&#39;</span><span class="token punctuation">;</span>
+<span class="token comment">//1. 创建新的axios实例，</span>
+<span class="token keyword">const</span> service <span class="token operator">=</span> axios<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment">// 公共接口</span>
+    <span class="token literal-property property">baseURL</span><span class="token operator">:</span> env<span class="token punctuation">.</span>baseURL<span class="token punctuation">,</span>
+    <span class="token comment">// 超时时间 单位是ms，这里设置了3s的超时时间</span>
+    <span class="token literal-property property">timeout</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> reqNum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// 当前正在进行的网络请求的数量</span>
+window<span class="token punctuation">.</span>_axiosPromiseArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// axios网络请求数组</span>
+<span class="token comment">// 2.请求拦截器</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+    <span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        reqNum<span class="token operator">++</span><span class="token punctuation">;</span>
+        config<span class="token punctuation">.</span>cancelToken <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">axios<span class="token punctuation">.</span>CancelToken</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">cancel</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            window<span class="token punctuation">.</span>_axiosPromiseArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span> cancel <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reqNum <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&#39;changeLoadingStatus&#39;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//打开全局弹窗</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//发请求前做的一些处理，数据转化，配置请求头，设置token,设置loading等，根据需求去添加</span>
+        config<span class="token punctuation">.</span>data <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//数据转化,也可以使用qs转换</span>
+        config<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">&#39;Content-Type&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&#39;application/json&#39;</span><span class="token punctuation">;</span>
+        <span class="token comment">//如有需要：注意使用token的时候需要引入cookie方法或者用本地localStorage等方法，推荐js-cookie</span>
+        <span class="token keyword">const</span> token <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&#39;EOAP-LOGIN-TOKEN&#39;</span><span class="token punctuation">)</span>
+            <span class="token operator">?</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&#39;EOAP-LOGIN-TOKEN&#39;</span><span class="token punctuation">)</span>
+            <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+        <span class="token comment">// M0YxNDhEMkVCMzUxQ0EyOUYwOENGNTA2MDRERjQ5M0E1MTM3QjE1OUJDNzQzODBGNzJFQ0MxQ0M1Nzc1OEVFQw==</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            config<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">&#39;EOAP-LOGIN-TOKEN&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> token<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 3.响应拦截器</span>
+service<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+    <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        reqNum<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reqNum <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&#39;changeLoadingStatus&#39;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//关闭全局弹窗</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//接收到响应数据并成功后的一些共有的处理，关闭loading等</span>
+        <span class="token comment">// response.config.metadata.endTime = new Date();</span>
+        <span class="token comment">// response.duration =</span>
+        <span class="token comment">//   response.config.metadata.endTime - response.config.metadata.startTime;</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> <span class="token number">200</span><span class="token operator">:</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg <span class="token operator">&amp;&amp;</span> response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">400</span><span class="token operator">:</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">401</span><span class="token operator">:</span>
+                localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">redirectLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">402</span><span class="token operator">:</span>
+                <span class="token comment">// localStorage.clear();</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">404</span><span class="token operator">:</span>
+                <span class="token comment">// localStorage.clear();</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">warning</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">413</span><span class="token operator">:</span>
+                <span class="token comment">// localStorage.clear();</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token number">500</span><span class="token operator">:</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// redirectLogin();</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// if (response.data.errorNumber !== 0) {</span>
+        <span class="token comment">//   ElMessage({</span>
+        <span class="token comment">//     type: &#39;error&#39;,</span>
+        <span class="token comment">//     grouping: true,</span>
+        <span class="token comment">//     message: response.data.message,</span>
+        <span class="token comment">//   });</span>
+        <span class="token comment">//   // eslint-disable-next-line no-unused-expressions, eqeqeq</span>
+        <span class="token comment">//   response.data.errorNumber == 204 ? redirectLogin() : &#39;&#39;;</span>
+        <span class="token comment">// } else {</span>
+        <span class="token keyword">return</span> response<span class="token punctuation">;</span>
+        <span class="token comment">// }</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        reqNum<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>reqNum <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&#39;changeLoadingStatus&#39;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//关闭全局弹窗</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// error.config.metadata.endTime = new Date();</span>
+        <span class="token comment">// error.duration =</span>
+        <span class="token comment">//   error.config.metadata.endTime - error.config.metadata.startTime;</span>
+        <span class="token comment">// console.log(error, 887654);</span>
+        <span class="token comment">// /***** 接收到异常响应的处理开始 *****/</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>error <span class="token operator">&amp;&amp;</span> error<span class="token punctuation">.</span>response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 1.公共错误处理</span>
+            <span class="token comment">// 2.根据响应码具体处理</span>
+            <span class="token keyword">switch</span> <span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">case</span> <span class="token number">400</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;错误请求&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">401</span><span class="token operator">:</span>
+                    localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;未授权，请重新登录&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">403</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;拒绝访问&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">404</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;请求错误,未找到该资源&#39;</span><span class="token punctuation">;</span>
+                    <span class="token comment">// window.location.href = &quot;/NotFound&quot;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">405</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;请求方法未允许&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">408</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;请求超时&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">500</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">501</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;网络未实现&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">502</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;网络错误&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">503</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;服务不可用&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">504</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;网络超时&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">case</span> <span class="token number">505</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;http版本不支持该请求&#39;</span><span class="token punctuation">;</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token keyword">default</span><span class="token operator">:</span>
+                    error<span class="token punctuation">.</span>message <span class="token operator">=</span> error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 超时处理</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">&#39;timeout&#39;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// Toast(&quot;服务器响应超时，请刷新当前页&quot;);</span>
+                window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&#39;服务器响应超时，请刷新当前页&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            error<span class="token punctuation">.</span>message <span class="token operator">=</span> <span class="token string">&#39;连接服务器失败&#39;</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// Message(error.message);</span>
+        <span class="token comment">// eslint-disable-next-line no-unused-expressions</span>
+        <span class="token comment">// eslint-disable-next-line no-unused-expressions</span>
+        error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">401</span> <span class="token operator">?</span> <span class="token function">redirectLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span>
+        window<span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token doc-comment comment">/***** 处理结束 *****/</span>
+        <span class="token comment">//如果不需要错误处理，以上的处理过程都可省略</span>
+        <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">redirectLogin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">&#39;/login&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> service<span class="token punctuation">;</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">/* eslint-disable comma-dangle */</span>
+<span class="token keyword">import</span> request <span class="token keyword">from</span> <span class="token string">&#39;./request&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> requestDown <span class="token keyword">from</span> <span class="token string">&#39;./requestUp&#39;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token doc-comment comment">/**
+     * methods: 请求
+     * <span class="token keyword">@param</span> <span class="token parameter">url</span> 请求地址
+     * <span class="token keyword">@param</span> <span class="token parameter">params</span> 请求参数
+     */</span>
+    <span class="token function">get</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> params<span class="token punctuation">,</span> headers<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">&#39;get&#39;</span><span class="token punctuation">,</span>
+            url<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>params<span class="token punctuation">)</span> config<span class="token punctuation">.</span>params <span class="token operator">=</span> params<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>headers<span class="token punctuation">)</span> config<span class="token punctuation">.</span>headers <span class="token operator">=</span> headers<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">post</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> params<span class="token punctuation">,</span> headers</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">&#39;post&#39;</span><span class="token punctuation">,</span>
+            url<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>params<span class="token punctuation">)</span> config<span class="token punctuation">.</span>data <span class="token operator">=</span> params<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>headers<span class="token punctuation">)</span> config<span class="token punctuation">.</span>headers <span class="token operator">=</span> headers<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">put</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">&#39;put&#39;</span><span class="token punctuation">,</span>
+            url<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>params<span class="token punctuation">)</span> config<span class="token punctuation">.</span>data <span class="token operator">=</span> params<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">delete</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> params<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">&#39;delete&#39;</span><span class="token punctuation">,</span>
+            url<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>params<span class="token punctuation">)</span> config<span class="token punctuation">.</span>data <span class="token operator">=</span> params<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">request</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">upload</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">&#39;post&#39;</span><span class="token punctuation">,</span>
+            url<span class="token punctuation">,</span>
+            <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string-property property">&#39;Content-Type&#39;</span><span class="token operator">:</span> <span class="token string">&#39;multipart/form-data;charset=utf-8&#39;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>params<span class="token punctuation">)</span> config<span class="token punctuation">.</span>data <span class="token operator">=</span> params<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">requestDown</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> http<span class="token punctuation">;</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> envBase<span class="token punctuation">;</span>
+<span class="token keyword">switch</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">API_ENV</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">&#39;prd&#39;</span><span class="token operator">:</span>
+        envBase <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">baseURL</span><span class="token operator">:</span> <span class="token string">&#39;XXXXXXX&#39;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">&#39;uat&#39;</span><span class="token operator">:</span>
+        envBase <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">baseURL</span><span class="token operator">:</span> <span class="token string">&#39;XXXXXXX&#39;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">&#39;dev&#39;</span><span class="token operator">:</span>
+        envBase <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">baseURL</span><span class="token operator">:</span> <span class="token string">&#39;XXXXXXX&#39;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">&#39;mock&#39;</span><span class="token operator">:</span>
+        envBase <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">baseURL</span><span class="token operator">:</span> <span class="token string">&#39;XXXXXXX&#39;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+        envBase <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">baseURL</span><span class="token operator">:</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> envBase<span class="token punctuation">;</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> Http <span class="token keyword">from</span> <span class="token string">&#39;@/services/config/http.js&#39;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">.</span>globalProperties<span class="token punctuation">.</span>$http <span class="token operator">=</span> Http<span class="token punctuation">;</span>
+
+<span class="token comment">//使用时</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> proxy <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">getCurrentInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+proxy<span class="token punctuation">.</span>$http
+    <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&#39;XXX&#39;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: shenxin@eastmoney.com">shenxin</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.2f80defe.js" defer></script>
+  </body>
+</html>

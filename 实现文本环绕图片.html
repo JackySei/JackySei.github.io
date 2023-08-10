@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.49">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title>JackyNotes</title><meta name="description" content="">
+    <link rel="modulepreload" href="/assets/app.2f80defe.js"><link rel="modulepreload" href="/assets/实现文本环绕图片.html.d3a3338a.js"><link rel="modulepreload" href="/assets/实现文本环绕图片.html.c88e0f30.js"><link rel="prefetch" href="/assets/axios相关封装.html.9a60d5d9.js"><link rel="prefetch" href="/assets/BaiduDisk.html.667ba838.js"><link rel="prefetch" href="/assets/chatGpt光标效果.html.9555685e.js"><link rel="prefetch" href="/assets/FunCurrie.html.e2e475ea.js"><link rel="prefetch" href="/assets/html2canvas将iframe页面生成图片.html.6fc7a653.js"><link rel="prefetch" href="/assets/js判断是否出现省略号.html.f9ac6476.js"><link rel="prefetch" href="/assets/index.html.ff1f10c3.js"><link rel="prefetch" href="/assets/SchoolAndroidApp.html.bc6a9453.js"><link rel="prefetch" href="/assets/TravelWebsit.html.2faa1604.js"><link rel="prefetch" href="/assets/VueNote.html.b43ab8ee.js"><link rel="prefetch" href="/assets/VueReactive.html.9b2d2785.js"><link rel="prefetch" href="/assets/VuexNote.html.cc1b0d19.js"><link rel="prefetch" href="/assets/vue动态路由.html.7854ad14.js"><link rel="prefetch" href="/assets/WeatherApp.html.9cf4cf03.js"><link rel="prefetch" href="/assets/WebpacktoVue.html.58ccd581.js"><link rel="prefetch" href="/assets/复制文本操作.html.9f613376.js"><link rel="prefetch" href="/assets/定制化tinymce部分功能.html.760d2b3e.js"><link rel="prefetch" href="/assets/格式之间的转换.html.9bb2384b.js"><link rel="prefetch" href="/assets/滚动条定位.html.b32d5ac4.js"><link rel="prefetch" href="/assets/自动引入Vue相关API与组件.html.e6af6fb7.js"><link rel="prefetch" href="/assets/跨域携带cookie.html.ff1edc3d.js"><link rel="prefetch" href="/assets/404.html.265028f6.js"><link rel="prefetch" href="/assets/axios相关封装.html.bd0009c2.js"><link rel="prefetch" href="/assets/BaiduDisk.html.377bf678.js"><link rel="prefetch" href="/assets/chatGpt光标效果.html.2f906e5f.js"><link rel="prefetch" href="/assets/FunCurrie.html.aafe1a96.js"><link rel="prefetch" href="/assets/html2canvas将iframe页面生成图片.html.e1962ae2.js"><link rel="prefetch" href="/assets/js判断是否出现省略号.html.145b5970.js"><link rel="prefetch" href="/assets/index.html.078ee103.js"><link rel="prefetch" href="/assets/SchoolAndroidApp.html.83baecb1.js"><link rel="prefetch" href="/assets/TravelWebsit.html.dccada84.js"><link rel="prefetch" href="/assets/VueNote.html.7a987f9d.js"><link rel="prefetch" href="/assets/VueReactive.html.b53dbecf.js"><link rel="prefetch" href="/assets/VuexNote.html.6e18719a.js"><link rel="prefetch" href="/assets/vue动态路由.html.67a4e16e.js"><link rel="prefetch" href="/assets/WeatherApp.html.cf3f8e43.js"><link rel="prefetch" href="/assets/WebpacktoVue.html.5dece516.js"><link rel="prefetch" href="/assets/复制文本操作.html.46c20677.js"><link rel="prefetch" href="/assets/定制化tinymce部分功能.html.148d4ed8.js"><link rel="prefetch" href="/assets/格式之间的转换.html.6d4b79c6.js"><link rel="prefetch" href="/assets/滚动条定位.html.dc648fe4.js"><link rel="prefetch" href="/assets/自动引入Vue相关API与组件.html.8439b1ff.js"><link rel="prefetch" href="/assets/跨域携带cookie.html.05b5eae0.js"><link rel="prefetch" href="/assets/404.html.1d3f59f6.js"><link rel="prefetch" href="/assets/404.f566c6de.js"><link rel="prefetch" href="/assets/Layout.5ea26204.js">
+    <link rel="stylesheet" href="/assets/style.96ee71b5.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><!----><span class="site-name">JackyNotes</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><form class="search-box" role="search"><input type="search" placeholder="输入标题" autocomplete="off" spellcheck="false" value><!----></form></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading"> <!----></p><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/%E5%AE%9E%E7%8E%B0%E6%96%87%E6%9C%AC%E7%8E%AF%E7%BB%95%E5%9B%BE%E7%89%87.html#方式1-shape-outside属性" class="router-link-active router-link-exact-active sidebar-item" aria-label="方式1：shape-outside属性"><!--[--><!--]--> 方式1：shape-outside属性 <!--[--><!--]--></a><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/%E5%AE%9E%E7%8E%B0%E6%96%87%E6%9C%AC%E7%8E%AF%E7%BB%95%E5%9B%BE%E7%89%87.html#参考样例" class="router-link-active router-link-exact-active sidebar-item" aria-label="参考样例"><!--[--><!--]--> 参考样例 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/%E5%AE%9E%E7%8E%B0%E6%96%87%E6%9C%AC%E7%8E%AF%E7%BB%95%E5%9B%BE%E7%89%87.html#方式2-单纯使用浮动占位的方式" class="router-link-active router-link-exact-active sidebar-item" aria-label="方式2：单纯使用浮动占位的方式"><!--[--><!--]--> 方式2：单纯使用浮动占位的方式 <!--[--><!--]--></a><ul style="display:none;" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/%E5%AE%9E%E7%8E%B0%E6%96%87%E6%9C%AC%E7%8E%AF%E7%BB%95%E5%9B%BE%E7%89%87.html#参考样例-1" class="router-link-active router-link-exact-active sidebar-item" aria-label="参考样例"><!--[--><!--]--> 参考样例 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/%E5%AE%9E%E7%8E%B0%E6%96%87%E6%9C%AC%E7%8E%AF%E7%BB%95%E5%9B%BE%E7%89%87.html#相关链接" class="router-link-active router-link-exact-active sidebar-item" aria-label="相关链接"><!--[--><!--]--> 相关链接 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><p><a name="tTZlx"></a></p><h2 id="方式1-shape-outside属性" tabindex="-1"><a class="header-anchor" href="#方式1-shape-outside属性" aria-hidden="true">#</a> 方式1：shape-outside属性</h2><p>除了用一些常规的相关属性处理外，还可以传入带透明度的占位符图片url<br>比如像<br><img src="https://cdn.nlark.com/yuque/0/2023/png/35795881/1691476385299-83c61692-95cf-4577-8a34-f577a361fbe4.png#averageHue=%2390908e&amp;clientId=u5c0819f7-4e86-4&amp;from=paste&amp;id=u4f33fef8&amp;originHeight=268&amp;originWidth=438&amp;originalType=url&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;taskId=u0bfe13ca-a218-4dca-9aba-b054c01c93e&amp;title=" alt=""><br><img src="https://cdn.nlark.com/yuque/0/2023/png/35795881/1691478829852-0f19b191-f2fe-45b9-895b-9842f6791a85.png#averageHue=%23f9dddd&amp;clientId=u5c0819f7-4e86-4&amp;from=paste&amp;height=499&amp;id=u1a069e81&amp;originHeight=499&amp;originWidth=565&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=2572&amp;status=done&amp;style=none&amp;taskId=ub0687940-67e4-44a5-9439-467e47368da&amp;title=&amp;width=565" alt="image.png"></p><p>在设置好相关的浮动方向，最后将图片定位在相应的位置，就可以达到预期的悬浮效果<br><img src="https://cdn.nlark.com/yuque/0/2023/png/35795881/1691477730616-c85862c3-40e3-4b4e-ab81-330143c963ff.png#averageHue=%23556336&amp;clientId=u5c0819f7-4e86-4&amp;from=paste&amp;id=u49d0bd5a&amp;originHeight=425&amp;originWidth=304&amp;originalType=url&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;taskId=u89afdf41-2c01-4508-8f2d-3088560b15c&amp;title=" alt=""><br><img src="https://cdn.nlark.com/yuque/0/2023/png/35795881/1691477932924-34309a4d-2450-4de9-925b-85b3700460a5.png#averageHue=%23e0ddda&amp;clientId=u5c0819f7-4e86-4&amp;from=paste&amp;height=460&amp;id=ud10aa3f7&amp;originHeight=460&amp;originWidth=340&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60548&amp;status=done&amp;style=none&amp;taskId=u5831266d-2770-4d98-95f0-bf041776d29&amp;title=&amp;width=340" alt="image.png"><br>优点：省事，一个属性解决一切。<br>缺点：某些情况下，字数必须要有一定数量（比如上图左下角悬浮的情况），如果字数不够那么字体撑起的高度比占位图还低那便达不到左下角悬浮的效果。另外需要额外切图。<br><img src="https://cdn.nlark.com/yuque/0/2023/png/35795881/1691480213275-d156c344-dda1-4d74-bf15-68e468ab14e5.png#averageHue=%23e7baba&amp;clientId=u5c0819f7-4e86-4&amp;from=paste&amp;height=235&amp;id=u73392e9e&amp;originHeight=235&amp;originWidth=550&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=26505&amp;status=done&amp;style=none&amp;taskId=u148d46c0-05ab-4512-95eb-c76ca484eea&amp;title=&amp;width=550" alt="image.png"><br>注：像这种情况剩余的红色部分都会作为文本与图片的间距</p><p><a name="let2N"></a></p><h3 id="参考样例" tabindex="-1"><a class="header-anchor" href="#参考样例" aria-hidden="true">#</a> 参考样例</h3><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">&quot;utf-8&quot;</span><span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>鹦鹉<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span>style type<span class="token operator">=</span><span class="token string">&quot;text/css&quot;</span><span class="token operator">&gt;</span>
+ 
+<span class="token literal-property property">clearfix</span><span class="token operator">:</span>before<span class="token punctuation">,</span>
+ 
+<span class="token punctuation">.</span>clearfix<span class="token operator">:</span>after <span class="token punctuation">{</span>
+ 
+  <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">&quot; &quot;</span><span class="token punctuation">;</span>
+ 
+  <span class="token comment">/* 1 */</span>
+ 
+  <span class="token literal-property property">display</span><span class="token operator">:</span> table<span class="token punctuation">;</span>
+ 
+  <span class="token comment">/* 2 */</span>
+ 
+<span class="token punctuation">}</span>
+ 
+ 
+ 
+<span class="token punctuation">.</span>clearfix<span class="token operator">:</span>after <span class="token punctuation">{</span>
+ 
+  <span class="token literal-property property">clear</span><span class="token operator">:</span> both<span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+ 
+ 
+ 
+ 
+<span class="token doc-comment comment">/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */</span>
+ 
+ 
+ 
+<span class="token punctuation">.</span>clearfix <span class="token punctuation">{</span>
+ 
+  <span class="token operator">*</span>zoom<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+ 
+ 
+body <span class="token punctuation">{</span>
+ 
+  font<span class="token operator">-</span>family<span class="token operator">:</span> <span class="token string">&quot;Helvetica Neue&quot;</span><span class="token punctuation">,</span> Helvetica<span class="token punctuation">,</span> arial<span class="token punctuation">,</span> freesans<span class="token punctuation">,</span> clean<span class="token punctuation">,</span> sans<span class="token operator">-</span>serif<span class="token punctuation">;</span>
+ 
+  <span class="token literal-property property">color</span><span class="token operator">:</span> #66595c<span class="token punctuation">;</span>
+ 
+  background<span class="token operator">-</span>color<span class="token operator">:</span> #faf6ec<span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+ 
+ 
+ 
+ 
+<span class="token comment">/* Start the styles  */</span>
+ 
+ 
+ 
+blockquote <span class="token punctuation">{</span>
+ 
+  font<span class="token operator">-</span>family<span class="token operator">:</span> <span class="token string">&quot;Lucida Bright&quot;</span><span class="token punctuation">,</span> Georgia<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+ 
+  font<span class="token operator">-</span>style<span class="token operator">:</span> italic<span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+blockquote <span class="token punctuation">{</span>
+ 
+  padding<span class="token operator">-</span>top<span class="token operator">:</span> 40px<span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+blockquote p <span class="token punctuation">{</span>
+ 
+  line<span class="token operator">-</span>height<span class="token operator">:</span> <span class="token number">1.6</span><span class="token punctuation">;</span>
+ 
+  <span class="token literal-property property">color</span><span class="token operator">:</span> #<span class="token number">000</span><span class="token punctuation">;</span>
+ 
+  text<span class="token operator">-</span>shadow<span class="token operator">:</span> 1px 1px 5px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">0.32</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+ 
+ 
+<span class="token punctuation">.</span>container <span class="token punctuation">{</span>
+ 
+  <span class="token literal-property property">width</span><span class="token operator">:</span> 600px<span class="token punctuation">;</span>
+ 
+  <span class="token literal-property property">height</span><span class="token operator">:</span> 900px<span class="token punctuation">;</span>
+ 
+  <span class="token literal-property property">margin</span><span class="token operator">:</span> 30px auto<span class="token punctuation">;</span>
+ 
+  background<span class="token operator">-</span>image<span class="token operator">:</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token string">&#39;https://lourfield.github.io/advanced-css-shapes/img/parrot.jpg&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+  background<span class="token operator">-</span>repeat<span class="token operator">:</span> no<span class="token operator">-</span>repeat<span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+ 
+ 
+<span class="token punctuation">.</span>shape <span class="token punctuation">{</span>
+ 
+  <span class="token literal-property property">width</span><span class="token operator">:</span> 600px<span class="token punctuation">;</span>
+ 
+  <span class="token literal-property property">height</span><span class="token operator">:</span> 900px<span class="token punctuation">;</span>
+ 
+  <span class="token literal-property property">float</span><span class="token operator">:</span> left<span class="token punctuation">;</span>
+ 
+  shape<span class="token operator">-</span>image<span class="token operator">-</span>threshold<span class="token operator">:</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+ 
+  shape<span class="token operator">-</span>outside<span class="token operator">:</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token string">&#39;https://lourfield.github.io/advanced-css-shapes/img/parrot-shape.png&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+  shape<span class="token operator">-</span>margin<span class="token operator">:</span> 15px<span class="token punctuation">;</span>
+ 
+<span class="token punctuation">}</span>
+ 
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
+ 
+ 
+ 
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;support-css-shapes&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+ 
+ 
+ 
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;container clearfix&quot;</span><span class="token operator">&gt;</span>
+ 
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;shape&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+ 
+  <span class="token operator">&lt;</span>blockquote<span class="token operator">&gt;</span>
+ 
+    <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span>strong<span class="token operator">&gt;</span>Parrots<span class="token operator">&lt;</span><span class="token operator">/</span>strong<span class="token operator">&gt;</span><span class="token punctuation">,</span> also known <span class="token keyword">as</span> psittacines are birds <span class="token keyword">of</span> the roughly <span class="token number">393</span> species <span class="token keyword">in</span> <span class="token number">92</span> genera that make up the order Psittaciformes<span class="token punctuation">,</span> found <span class="token keyword">in</span> most tropical and subtropical regions<span class="token punctuation">.</span> The order is subdivided into three superfamilies<span class="token operator">:</span> the <span class="token function">Psittacoidea</span>
+ 
+      <span class="token punctuation">(</span><span class="token string">&quot;true&quot;</span> parrots<span class="token punctuation">)</span><span class="token punctuation">,</span> the <span class="token function">Cacatuoidea</span> <span class="token punctuation">(</span>cockatoos<span class="token punctuation">)</span><span class="token punctuation">,</span> and the <span class="token function">Strigopoidea</span> <span class="token punctuation">(</span>New Zealand parrots<span class="token punctuation">)</span><span class="token punctuation">.</span> Parrots have a generally pantropical distribution <span class="token keyword">with</span> several species inhabiting temperate regions <span class="token keyword">in</span> the Southern Hemisphere<span class="token punctuation">,</span> <span class="token keyword">as</span> well<span class="token punctuation">.</span> The greatest diversity
+ 
+      <span class="token keyword">of</span> parrots is <span class="token keyword">in</span> South America and Australasia<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+ 
+  <span class="token operator">&lt;</span><span class="token operator">/</span>blockquote<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
+ 
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a name="BVc4q"></a></p><h2 id="方式2-单纯使用浮动占位的方式" tabindex="-1"><a class="header-anchor" href="#方式2-单纯使用浮动占位的方式" aria-hidden="true">#</a> 方式2：单纯使用浮动占位的方式</h2><p>核心：靠浮动的块将图片挤到想要的位置<br>比如要实现左下悬浮</p><div class="language-html ext-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>empty<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>imgbox<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
+      <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../wallpaper1681960076897.jpg<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>200<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>200<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    文本....
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>empty块就起到了浮动占位的作用<br>充分利用浮动的特性完成文本环绕<br><img src="https://cdn.nlark.com/yuque/0/2023/png/35795881/1691550877349-e3475338-4ef7-4a05-8f9f-110fa1c083fd.png#averageHue=%23efece9&amp;clientId=ufafa0c3e-0007-4&amp;from=paste&amp;height=354&amp;id=u8ca318d7&amp;originHeight=354&amp;originWidth=752&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=120315&amp;status=done&amp;style=none&amp;taskId=u7b1f9910-6c42-494b-a3ba-36de7d44053&amp;title=&amp;width=752" alt="image.png"><br><strong>红线部分即是占位符的内容</strong><br><strong>很多时候图片是固定的，但文本不固定，文本的高度也就不固定，需要主动计算。</strong></p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">addEmptyHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> height <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">height</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">let</span> top <span class="token operator">=</span> height <span class="token operator">&lt;</span> <span class="token number">512</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> <span class="token number">512</span><span class="token punctuation">;</span>
+      <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#empty&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">&quot;height&quot;</span><span class="token punctuation">,</span> height <span class="token operator">-</span> top <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> imgNodes <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">&#39;#txt img&#39;</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> imgArr <span class="token operator">=</span> imgNodes <span class="token keyword">instanceof</span> <span class="token class-name">HTMLImageElement</span> <span class="token operator">?</span> <span class="token punctuation">[</span>imgNodes<span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span>imgNodes<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 将NodeList类数组对象转Array，Array才有forEach方法</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>imgArr<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">addEmptyHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 文本里面有图片则需要等待里面所有图片加载完成后再添加高度</span>
+      imgArr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">img</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>img<span class="token punctuation">.</span>complete<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 图片加载完成后执行</span>
+            <span class="token function">addEmptyHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 图片加载完成后清除定时器</span>
+            <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>优点：不需要额外切图，纯靠浮动控制即可。<br>缺点：某些情况需要手动计算高度已达到自适应，同时图片与文字之前的间距还需要额外的调整。 <a name="cBt4H"></a></p><h3 id="参考样例-1" tabindex="-1"><a class="header-anchor" href="#参考样例-1" aria-hidden="true">#</a> 参考样例</h3><div class="language-html ext-html line-numbers-mode"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>css/style.css<span class="token punctuation">&quot;</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>empty<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>imgbox<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
+                    <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../wallpaper1681960076897.jpg<span class="token punctuation">&quot;</span></span>
+                    <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span>
+                    <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>200<span class="token punctuation">&quot;</span></span>
+                    <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>200<span class="token punctuation">&quot;</span></span>
+                <span class="token punctuation">/&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                Vue是一种用于构建用户界面的渐进式JavaScript框架。它由尤雨溪开发，并于2014年首次发布。
+                Vue的目标是通过尽可能简单的API设计aScript框架。它由尤雨溪开发，并于2014年首次发布。
+                Vue的目标是通过尽可能简单的API设计，使开发人员能够更轻松地构建可复用的组件化应用程序
+                。单的API设计，使开发人员能够更轻松地构建可复用的组件化应用程序。
+                Vue是一种用于构建用户界面的渐进式JavaScript框架。它由尤雨溪开发，
+                并于2014年首次发布。Vue的目标是通过尽可能简单的API设计，它由尤雨溪开发，
+                并于2014年首次发布。Vue的目标是通过尽可能简单的API设计。
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+        <span class="token selector">.container</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+            <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> 1px solid #ccc<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector">.empty</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+            <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector">.imgbox</span> <span class="token punctuation">{</span>
+            <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+            <span class="token property">clear</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector">.text</span> <span class="token punctuation">{</span>
+            <span class="token property">line-height</span><span class="token punctuation">:</span> 24px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a name="YkJuX"></a></p><h2 id="相关链接" tabindex="-1"><a class="header-anchor" href="#相关链接" aria-hidden="true">#</a> 相关链接</h2><p><a href="https://blog.csdn.net/cwyp18809/article/details/105097750" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/cwyp18809/article/details/105097750<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a><br><a href="https://blog.csdn.net/weixin_48658667/article/details/128865740" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/weixin_48658667/article/details/128865740<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></p></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: shenxin@eastmoney.com">shenxin</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.2f80defe.js" defer></script>
+  </body>
+</html>
